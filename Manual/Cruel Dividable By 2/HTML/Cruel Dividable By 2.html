@@ -56,7 +56,7 @@
             <div class="page-content">
                 <img src="img/Component/Cruel Dividable By 2.svg" class="diagram">
                 <h2>On the Subject of Cruel Dividable By 2</h2>
-                <p class="flavour-text">It’s back!... And yet it still doesn’t know that it’s supposed to be “divisible by 2”, not “dividable by 2”...</p>
+                <p class="flavour-text">It’s back!... And yet it still doesn’t know that it’s “divisible”, not “dividable”, in this context...</p>
 
                 <p>This module contains a display flashing a sequence of digits (with a break between the start/end of the sequence; the sequence can be restarted by pressing the display), and two buttons: a green one labeled “Y”, and a red one labeled “N”.</p>
                 <p>The flashing sequence of digits gives you information about some digits, which were placed into the maze below, and which then moved around it.</p>
@@ -147,7 +147,7 @@
                         <ul>
                             <li>
                                 Move each digit in the maze one space in the received direction.
-                                If a digit cannot move in the received direction, rotate the direction for the digit clockwise until it can move.
+                                If a digit cannot move in the received direction, rotate the direction for the said digit clockwise until it can move.
                             </li>
                         </ul>
                     </li>
@@ -162,13 +162,13 @@
                     <li>
                         Take the sum of all digits in the current row, each taken to the power of its column number
                         (e.g. if the current row has a 3 in column 2, and a 7 in column 4, you would take the sum of 3<sup>2</sup> and 7<sup>4</sup>).<br>
-                        Take the result modulo 15, and use it in one of the tables below to obtain a list of four times.<br>
-                        Press the correct button when the bomb timer’s seconds match any of the times from the obtained list.
+                        Take the result modulo 15, and use it in one of the tables below to obtain a list of four press times.<br>
+                        Press the correct button when the bomb timer’s seconds match any of the press times from the obtained list.
                     </li>
                 </ul>
                 <div class="hstack">
                     <table>
-                        <tr><th>#</th><th>Times</th></tr>
+                        <tr><th>#</th><th>Press Times</th></tr>
                         <tr><th>0</th><td>:00, :15, :30, :45</td></tr>
                         <tr><th>1</th><td>:01, :16, :31, :46</td></tr>
                         <tr><th>2</th><td>:02, :17, :32, :47</td></tr>
@@ -176,7 +176,7 @@
                         <tr><th>4</th><td>:04, :19, :34, :49</td></tr>
                     </table>
                     <table>
-                        <tr><th>#</th><th>Times</th></tr>
+                        <tr><th>#</th><th>Press Times</th></tr>
                         <tr><th>5</th><td>:05, :20, :35, :50</td></tr>
                         <tr><th>6</th><td>:06, :21, :36, :51</td></tr>
                         <tr><th>7</th><td>:07, :22, :37, :52</td></tr>
@@ -184,7 +184,7 @@
                         <tr><th>9</th><td>:09, :24, :39, :54</td></tr>
                     </table>
                     <table>
-                        <tr><th>#</th><th>Times</th></tr>
+                        <tr><th>#</th><th>Press Times</th></tr>
                         <tr><th>10</th><td>:10, :25, :40, :55</td></tr>
                         <tr><th>11</th><td>:11, :26, :41, :56</td></tr>
                         <tr><th>12</th><td>:12, :27, :42, :57</td></tr>

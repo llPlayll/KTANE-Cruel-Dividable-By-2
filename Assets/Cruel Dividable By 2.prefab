@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 65828135305957136}
   - component: {fileID: 114106981211514502}
   - component: {fileID: 23912772927689948}
+  - component: {fileID: 114723148326221884}
   m_Layer: 0
   m_Name: HL
   m_TagString: Untagged
@@ -242,6 +243,7 @@ GameObject:
   - component: {fileID: 65643565009982724}
   - component: {fileID: 114367465247804758}
   - component: {fileID: 23962850075133808}
+  - component: {fileID: 114510244436937490}
   m_Layer: 0
   m_Name: HL
   m_TagString: Untagged
@@ -1055,7 +1057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - KT/Mobile/Diffuse
+  - KT/Mobile/DiffuseTint
 --- !u!114 &114255407431056806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1144,6 +1146,19 @@ MonoBehaviour:
   AllowSelectionWrapY: 0
   ForceSelectionHighlight: 0
   ForceInteractionHighlight: 0
+--- !u!114 &114510244436937490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1852064088990564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Outline
 --- !u!114 &114561243024994972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1191,7 +1206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShaderNames:
-  - KT/Mobile/DiffuseTint
+  - KT/Outline
 --- !u!114 &114601273759023462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1243,6 +1258,19 @@ MonoBehaviour:
   AllowSelectionWrapY: 0
   ForceSelectionHighlight: 0
   ForceInteractionHighlight: 0
+--- !u!114 &114723148326221884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381542860532702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1005838349, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShaderNames:
+  - KT/Outline
 --- !u!114 &114739355598135504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1280,8 +1308,8 @@ MonoBehaviour:
   m_Script: {fileID: -119419473, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ModuleType: dividableBy2
-  ModuleDisplayName: Dividable By Two
+  ModuleType: cruelDividableBy2
+  ModuleDisplayName: Cruel Dividable By 2
   RequiresTimerVisibility: 0
 --- !u!114 &114834617556013168
 MonoBehaviour:

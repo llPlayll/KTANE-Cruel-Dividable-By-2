@@ -2,9 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using UnityEngine;
-using KModkit;
 using Rnd = UnityEngine.Random;
 
 public class cruelDividableBy2 : MonoBehaviour
@@ -175,15 +173,15 @@ public class cruelDividableBy2 : MonoBehaviour
 
         success = true;
         Log($"(Note: all logged coordinates follow the format of \"(Row, Column)\")");
-        Log($"Generated module in {genAttempts} attempt(s).");
+        Log($"Generated the module in {genAttempts} attempt(s).");
         digitSequence = N.ToString();
         for (int d = 0; d < N; d++) digitSequence += $"{digitValues[d]}{startingDigitPositions[d] / 5}{startingDigitPositions[d] % 5}";
         digitSequence += moves.Join("");
 
         Log($"Module's flashing sequence of digits is: {digitSequence}. This gives:");
-        Log($"N = {N}.");
+        Log($"N = {N}:");
         for (int d = 0; d < N; d++) Log($"Digit #{d + 1}: {digitValues[d]}, starting at {PosToCoordinate(startingDigitPositions[d])}.");
-        Log($"The Moves are: {moves.Join(", ")}.");
+        Log($"The Moves are: {moves.Join(", ")}:");
 
         for (int m = 0; m < moves.Count; m++)
         {
@@ -224,7 +222,7 @@ public class cruelDividableBy2 : MonoBehaviour
             Log($"Row {r}:");
             if (correctPresses[r] == 1) Log($"Doubled sum of this row's digits is {rowSum}, which falls in range 23 to 87 (exclusive), so the \"Y\" button should be pressed.");
             else Log($"Doubled sum of this row's digits is {rowSum}, which falls outside of the range 23 to 87 (exclusive), so the \"N\" button should be pressed.");
-            Log($"Sum of this row's digits, each taken to the power of its column number, is {rowPowerSum}." +
+            Log($"Sum of this row's digits, each taken to the power of its column number, is {rowPowerSum}. " +
                 $"Modulo 15 is {correctTimes[r]}, so the button can be pressed at {LogCorrectTimes(correctTimes[r])}.");
         }
     }

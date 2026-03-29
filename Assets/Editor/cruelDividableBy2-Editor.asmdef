@@ -1,0 +1,10 @@
+{
+  "name": "cruelDividableBy2-Editor",
+  "references": [
+    "cruelDividableBy2"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": []
+}
