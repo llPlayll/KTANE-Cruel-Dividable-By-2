@@ -19,4 +19,4 @@ MonoBehaviour:
     by _Play_.\nHappy April Fools! :3c"
   version: 1
   outputFolder: build
-  previewImage: {fileID: 0}
+  previewImage: {fileID: 2800000, guid: 2018b757453f2564a836c0618aafcbc0, type: 3}
