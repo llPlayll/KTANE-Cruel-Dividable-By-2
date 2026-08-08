@@ -1310,7 +1310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ModuleType: cruelDividableBy2
   ModuleDisplayName: Cruel Dividable By 2
-  RequiresTimerVisibility: 0
+  RequiresTimerVisibility: 1
 --- !u!114 &114834617556013168
 MonoBehaviour:
   m_ObjectHideFlags: 1
